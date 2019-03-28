@@ -30,16 +30,34 @@ nom install pivotsecurity-node
 
 ```node.js
 
-var account = require('account');
-account.env('<public_key>','<private_key>');
+var account = require('pivotsecurity-node');
 
-account.info( {
-  data: { uid: '21123', 'email' : '' },
-}).on('complete', function(data, response) {
-	if (data){
-	// use data..
-	}
-  }
+// Ontain from www.pivotsecurity.com
+account.env('Public_Key','Private_Key');
+
+account.Info('AWQ13', '').on('complete',  function(data, response) {
+	if (response.statusCode == 200){
+	 console.log(data[0]);
+	 }else{
+	 	// error
+	 }
+});
+
+
+account.Verify('AWQ13', '', '123456').on('complete',  function(data, response) {
+	if (response.statusCode == 200){
+	 console.log(data[0]);
+	 }else{
+	 	// error
+	 }
+});
+
+account.Verify('', 'someon@somewhere.com', '123456').on('complete',  function(data, response) {
+	if (response.statusCode == 200){
+	 console.log(data[0]);
+	 }else{
+	 	// error
+	 }
 });
 ```
 

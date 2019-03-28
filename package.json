@@ -1,6 +1,6 @@
 {
   "name": "pivotsecurity-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pivot Security API library for node.js",
   "homepage": "https://github.com/danwrong/restler",
   "repository": {
