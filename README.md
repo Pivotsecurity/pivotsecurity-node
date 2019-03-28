@@ -23,25 +23,6 @@ All updates to this library is documented in our [CHANGELOG](https://github.com/
 nom install pivotsecurity-node
 ```
 
-## Setup Environment Variables
-
-### Initial Setup
-
-```bash
-cp .env_sample .env
-```
-
-### Environment Variable
-
-Update the development environment with your keys(https://api.pivotsecurity.com/settings/), for example:
-
-```bash
-echo "export PUBLIC_API_KEY='YOUR_PUBLIC_API_KEY'" > pivotsecurity.env
-echo "export PRIVATE_API_KEY='YOUR_PRIVATE_API_KEY'" > pivotsecurity.env
-echo "pivotsecurity.env" >> .gitignore
-source ./pivotsecurity.env
-```
-
 <a name="quick-start"></a>
 # Quick Start
 
