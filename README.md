@@ -31,7 +31,7 @@ nom install pivotsecurity-node
 ```node.js
 
 var account = require('account');
-account.env('<private_key>','<public_key>');
+account.env('<public_key>','<private_key>');
 
 account.info( {
   data: { uid: '21123', 'email' : '' },
