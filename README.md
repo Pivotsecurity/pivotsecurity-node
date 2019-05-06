@@ -17,6 +17,8 @@ All updates to this library is documented in our [CHANGELOG](https://github.com/
 
 - Node.js version 1.x. 2.x
 
+Read full docs: https://github.com/Pivotsecurity/pivotsecurity-node/tree/master/doc 
+
 ## Install Package
 
 ```bash
